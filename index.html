@@ -1,11 +1,23 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Fun Fractals</title>
 </head>
 
 <body>
-    <canvas id="canvas" width="1000" height="1000">
+    <main>
+        <canvas id="canvas" width="1000" height="1000"></canvas>
+        <div>
+            <input type="range" min="0" max="7" value="4" class="slider" id="recursion-slider">
+            <p>Recursion: <span id="recursion-value"></span></p>
+        </div>
+        <div>
+            <input type="color" value="#FEB837" id="colour-picker-1" />
+            <input type="color" value="#FFFC8D" id="colour-picker-2" />
+        </div>
+    </main>
     <script type="text/javascript" src="fractals.js"></script>
 </body>
+
 </html>
