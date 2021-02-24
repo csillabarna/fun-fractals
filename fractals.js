@@ -2,6 +2,13 @@
 const canvas  = document.getElementById('canvas')
 const context = canvas.getContext('2d')
 
+// Fix canvas blur on responsive design with the help of dpi
+let dpi = window.devicePixelRatio;
+let effectiveWidth = getComputedStyle(canvas).getPropertyValue("width")
+let style_width = effectiveWidth.slice(0, -2)
+canvas.width = style_width * dpi
+canvas.height = canvas.width
+
 const recursionSlider = document.getElementById("recursion-slider");
 const recursionValue  = document.getElementById("recursion-value");
 
