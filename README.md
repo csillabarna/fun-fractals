@@ -12,4 +12,4 @@ Experimenting with recursion and graphics with the help of fractals.
 3. Remove the central triangle
 4. For each remaining triangle recursively repeat from step 2
 
-![Sierpiński triangle](Sierpiński_triangle.gif)
+<img src="Sierpiński_triangle.gif" width="600" height="600">
